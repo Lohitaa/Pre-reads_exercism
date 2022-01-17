@@ -1,0 +1,22 @@
+class RnaTranscription {
+public static String transcribe(String dna){
+    String rna ="";
+    for(char c: dna.toCharArray()){
+        switch (c){
+            case 'G':
+                rna = rna+"C";
+                break;
+            case 'C':
+                rna = rna+"G";
+                break;
+            case 'T':
+                rna = rna+"A";
+                break;
+            case 'A':
+                rna = rna+"U";
+                break;
+        }
+    }
+    return rna;
+}
+}
